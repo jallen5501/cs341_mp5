@@ -1,0 +1,23 @@
+Script started on Sun Nov 28 00:41:49 2004
+warning: could not update utmp entry
+u18(1)%	 mtip -b 7 -f test_comintspack.lnx
+For command help, type ~?
+For help on args, rerun without args
+Code starts at 0x100100
+Using board # 7 
+
+Tutor> ~downloading test_comintspack.lnx
+.....Done.
+
+Download done, setting EIP to 100100.
+Tutor> go 100100
+Waiting for interrupts from COM1 .... 
+I typed this in from another widondow attached to COM1 port
+
+All done
+Exception 3 at EIP=00100110: Breakpoint
+Tutor> ~q 
+Quit handler: 
+killing process 9225 Leaving board #7
+u18(2)%	exit
+script done on Sun Nov 28 00:43:17 2004

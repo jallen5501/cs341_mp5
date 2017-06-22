@@ -1,0 +1,29 @@
+Script started on Mon Feb 18 14:39:37 2008
+warning: could not update utmp entry
+u17(1)% mtip -l /remgdb7[K[K[K[K[K[K[K[Kdev[K[K[K/dev/remgdb7
+For command help, type ~?
+For help on args, rerun without args
+Using board # -1 
+
+Prompt: 
+now is time
+Prompt: 
+see me type data in
+Prompt: 
+more data
+Prompt: 
+more
+Prompt: 
+more
+Prompt: 
+more
+Prompt: 
+more in
+Prompt: 
+and more
+Prompt: 
+~q 
+Quit handler: 
+killing process 12525 Leaving board #-1
+u17(2)% exit
+script done on Mon Feb 18 14:44:38 2008

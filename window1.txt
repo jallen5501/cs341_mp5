@@ -1,0 +1,70 @@
+Script started on Mon Feb 18 14:40:40 2008
+warning: could not update utmp entry
+u17(1)%	make tutor.lnx
+make: `tutor.lnx' is up to date.
+u17(2)%	mtip -f tutor.lnx -b 7
+For command help, type ~?
+For help on args, rerun without args
+Code starts at 0x100100
+Using board # 7 
+
+Tutor> ~resetting board #7!
+Please type <CR> to confirm console setting: 
+Setting console dev to COM2Console: colour EGA+ 80x25
+COM1 at 0x03f8 (irq = 4) is a 16550A
+COM2 at 0x02f8 (irq = 3) is a 16550A
+
+                 Welcome to UMB Tutor for the PC
+   UMB Tutor is a 32-bit protected-mode PC debugger/downloader,
+       based on Linux, UMB Tutor for m68k, and remote gdb.
+UMB Tutor is free software and you are welcome to distribute copies
+of it under certain conditions.  There is no warranty for this program.
+The copyright and warranty provisions follow the Gnu general public
+license, available for view in gdb and elsewhere.  Full sources available.
+--bugs, suggestions, questions to eoneil@cs.umb.edu
+
+Exception 3 at EIP=000578f3: Breakpoint
+Tutor> ~downloading tutor.lnx
+...........Done.
+
+Download done, setting EIP to 100100.
+Tutor> go 100100
+    cmd     help message
+  timeon    Timer On: timeon <interval in secs>
+ timeoff    Timer Off: timeoff 
+     spi    Serial Port Interrupts: spi <on/off>
+      md    Memory display: md <addr>
+      ms    Memory set: ms <addr>
+       h    Help: h <cmd> or h (for all)
+       q    Quit
+PC-tutor> spi on
+comints for COM1 on
+PC-tutor> 
+now is time
+see me type data in
+PC-tutor> timeon 5               NOTE: I can still enter a PC-tutor cmd
+timer on
+PC-tutor> (1)			 Note: Timer is operating independently
+more data^M^M			 of the COM1 port each using interrupts
+(2)
+(3)
+(4)
+more
+(5)
+more
+more
+(6)
+(7)
+timeoff				 Note: another PC-tutor command
+timer off
+PC-tutor> more in
+and more
+spi off
+comints for COM1 off
+PC-tutor> q
+Exception 3 at EIP=00100110: Breakpoint
+Tutor> ~q 
+Quit handler: 
+killing process 12521 Leaving board #7
+u17(3)%	exit
+script done on Mon Feb 18 14:44:30 2008
